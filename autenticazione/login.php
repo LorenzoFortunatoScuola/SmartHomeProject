@@ -51,7 +51,7 @@
 
         <div class="text-center mb-4">
             <i class="bi bi-person-circle logo"></i>
-            <h3 class="mt-2">Accedi alla tua SmartHome</h3>
+            <h3 class="mt-2">Accedi</h3>
             <p class="text-muted">Inserisci le tue credenziali</p>
         </div>
 
@@ -79,9 +79,9 @@
 
             </div>
 
-            <button type="submit" class="btn btn-primary w-100 btn-login">
+            <a href="../dashboard/index.php" class="btn btn-primary w-100 btn-login">
                 Accedi
-            </button>
+            </a>
 
         </form>
 

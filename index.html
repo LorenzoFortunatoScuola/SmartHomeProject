@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Home Dashboard</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container-fluid">
+
+<a class="navbar-brand" href="#">Smart Home</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav me-auto">
+
+<li class="nav-item">
+<a class="nav-link active" href="index.html">Dashboard</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="stanze.html">Stanze</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="utenti.html">Utenti</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="notifiche.html">Notifiche</a>
+</li>
+
+</ul>
+
+<img src="img/profilo.png" width="40" class="rounded-circle">
+
+</div>
+</div>
+</nav>
+
+<!-- CONTENUTO -->
+
+<div class="container mt-4">
+
+<h2>Dashboard Casa</h2>
+
+<div class="row mt-4">
+
+<!-- Temperatura -->
+
+<div class="col-md-4">
+<div class="card text-center">
+
+<div class="card-body">
+
+<h5>Temperatura media</h5>
+
+<h1 class="text-danger">22°C</h1>
+
+</div>
+</div>
+</div>
+
+<!-- Umidità -->
+
+<div class="col-md-4">
+<div class="card text-center">
+
+<div class="card-body">
+
+<h5>Umidità</h5>
+
+<h1 class="text-primary">60%</h1>
+
+</div>
+</div>
+</div>
+
+<!-- Qualità aria -->
+
+<div class="col-md-4">
+<div class="card text-center">
+
+<div class="card-body">
+
+<h5>Qualità aria</h5>
+
+<h1 class="text-success">Buona</h1>
+
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- ALERT -->
+
+<div class="mt-5">
+
+<h3>Alert Sistema</h3>
+
+<div class="alert alert-danger">
+🔥 Incendio rilevato in cucina – pompa acqua attivata
+</div>
+
+<div class="alert alert-warning">
+⚠ Umidità alta in bagno
+</div>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

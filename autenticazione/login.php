@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Registrati</title>
+    <title>Login</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -21,9 +21,9 @@
             font-family: Arial, sans-serif;
         }
 
-        .register-card {
+        .login-card {
             width: 100%;
-            max-width: 450px;
+            max-width: 400px;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
@@ -32,7 +32,7 @@
             border-radius: 10px;
         }
 
-        .btn-register {
+        .btn-login {
             border-radius: 10px;
             font-weight: 600;
         }
@@ -47,23 +47,15 @@
 
 <body>
 
-    <div class="card register-card p-4">
+    <div class="card login-card p-4">
 
         <div class="text-center mb-4">
-            <i class="bi bi-person-plus logo"></i>
-            <h3 class="mt-2">Crea un account</h3>
-            <p class="text-muted">Registrati per continuare</p>
+            <i class="bi bi-person-circle logo"></i>
+            <h3 class="mt-2">Accedi alla tua SmartHome</h3>
+            <p class="text-muted">Inserisci le tue credenziali</p>
         </div>
 
         <form>
-
-            <div class="mb-3">
-                <label class="form-label">Username</label>
-                <div class="input-group">
-                    <span class="input-group-text"><i class="bi bi-person"></i></span>
-                    <input type="text" class="form-control" placeholder="Inserisci sername" required>
-                </div>
-            </div>
 
             <div class="mb-3">
                 <label class="form-label">Email</label>
@@ -81,16 +73,14 @@
                 </div>
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Conferma Password</label>
-                <div class="input-group">
-                    <span class="input-group-text"><i class="bi bi-shield-lock"></i></span>
-                    <input type="password" class="form-control" placeholder="Conferma password" required>
-                </div>
+            <div class="d-flex justify-content-between mb-3">
+
+                <a href="#" class="text-decoration-none"></a>
+
             </div>
 
-            <button type="submit" class="btn btn-primary w-100 btn-register">
-                Registrati
+            <button type="submit" class="btn btn-primary w-100 btn-login">
+                Accedi
             </button>
 
         </form>
@@ -98,10 +88,8 @@
         <hr>
 
         <div class="text-center">
-            <p class="mb-0">Hai già un account?</p>
-            <a href="login.html" class="text-decoration-none fw-bold">
-                Torna al login
-            </a>
+            <p class="mb-0">Non hai un account?</p>
+            <a href="registrazione.php" class="text-decoration-none fw-bold">Registrati</a>
         </div>
 
     </div>

@@ -50,8 +50,7 @@
             <a href="#">📊 Sensori</a>
             <a href="#">🗺️ Planimetria</a>
             <a href="#">👥 Utenti</a>
-            <a href="#">🔔 Notifiche</a>
-            <a href="#">📚 Storico</a>
+            <a href="notifiche.php">🔔 Notifiche</a>
             <a href="impostazioni.php">⚙️ Impostazioni</a>
         </div>
 
@@ -63,7 +62,7 @@
                 <span class="navbar-brand mb-0 h4">Dashboard Smart Home</span>
                 <div class="d-flex align-items-center">
                     <img src="https://via.placeholder.com/40" class="rounded-circle me-2">
-                    <span>Fabio</span>
+                    <span>User</span>
                 </div>
             </nav>
 

@@ -52,7 +52,7 @@
             <a href="#">👥 Utenti</a>
             <a href="#">🔔 Notifiche</a>
             <a href="#">📚 Storico</a>
-            <a href="#">⚙️ Impostazioni</a>
+            <a href="impostazioni.php">⚙️ Impostazioni</a>
         </div>
 
         <!-- MAIN CONTENT -->

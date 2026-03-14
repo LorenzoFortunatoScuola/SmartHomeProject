@@ -48,7 +48,7 @@
             <h4 class="text-center mb-4">Smart Home</h4>
             <a href="#">🏠 Dashboard</a>
             <a href="#">📊 Sensori</a>
-            <a href="#">🗺️ Planimetria</a>
+            <a href="planimetria.php">🗺️ Planimetria</a>
             <a href="#">👥 Utenti</a>
             <a href="notifiche.php">🔔 Notifiche</a>
             <a href="impostazioni.php">⚙️ Impostazioni</a>

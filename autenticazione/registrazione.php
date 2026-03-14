@@ -89,9 +89,9 @@
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-primary w-100 btn-register">
+            <a href="../dashboard/index.php" class="btn btn-primary w-100 btn-login">
                 Registrati
-            </button>
+            </a>
 
         </form>
 

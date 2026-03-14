@@ -83,7 +83,7 @@
         <div class="card-body">
             <h5 class="card-title">👤 Nuovo utente aggiunto</h5>
             <p class="card-text">
-                L’utente <strong>Marco Verdi</strong> è stato aggiunto alla casa come Visualizzatore.
+                L’utente <strong>Mario Rossi</strong> è stato aggiunto alla casa come Visualizzatore.
             </p>
             <p class="text-muted">14/03/2026 – 14:10</p>
         </div>

@@ -73,6 +73,8 @@
             border-left: 8px solid #dc3545;
             border-radius: 12px;
             box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+            padding: 1rem;
+            margin-bottom: 1.5rem;
         }
 
         /* ROOM PLAN */
@@ -159,16 +161,20 @@
             <!-- NAVBAR -->
             <nav class="navbar navbar-light navbar-custom mb-4 p-3">
                 <span class="navbar-brand mb-0 h4">Dashboard Smart Home</span>
-                <div class="d-flex align-items-center">
-                    <img src="https://via.placeholder.com/40" alt="User">
-                    <span class="ms-2">User</span>
+                <div class="d-flex align-items-center ms-auto">
+                    <!-- Solo l'utente connesso -->
+                    <img src="https://via.placeholder.com/40" alt="PIC">
+                    <span class="ms-2">Mario Rossi (Configuratore)</span>
                 </div>
             </nav>
 
             <!-- ALERT INCENDIO -->
-            <div class="alert-fire d-flex align-items-center p-3 mb-4">
-                <i class="fas fa-fire me-2"></i>
-                <strong>Allarme incendio!</strong> Rilevato fumo nella stanza Cucina. Pompa attivata automaticamente.
+            <div class="alert-fire d-flex flex-column p-3 mb-4">
+                <div class="d-flex align-items-center mb-2">
+                    <i class="fas fa-fire me-2"></i>
+                    <strong>Allarme incendio!</strong>
+                </div>
+                <span>Rilevato fumo nella stanza Cucina. Pompa attivata automaticamente.</span>
             </div>
 
             <!-- SENSOR CARDS -->
@@ -196,34 +202,31 @@
                 </div>
             </div>
 
-            <!-- PLANIMETRIA -->
-            <h4 class="mb-3">Planimetria Casa</h4>
-            <div class="room-box mb-4">
-                <img src="https://via.placeholder.com/800x300?text=Planimetria+Casa" class="img-fluid rounded">
-            </div>
-
             <!-- UTENTI -->
-            <h4 class="mb-3">Utenti Associati</h4>
+            <h4 class="mb-3">Utenti Attivi</h4>
             <div class="row mb-4">
+                <!-- Luca -->
                 <div class="col-md-3 mb-3">
                     <div class="user-card p-3">
-                        <img src="https://via.placeholder.com/300" alt="Mario Rossi">
+                        <img src="https://via.placeholder.com/300" alt="PIC">
                         <div class="mt-3">
-                            <h5>Mario Rossi</h5>
-                            <p>Configuratore</p>
-                            <p class="text-muted">Email: mario@example.com</p>
-                            <p class="text-muted">Telegram: @mario</p>
+                            <h5>Luca Bianchi</h5>
+                            <p>Visualizzatore (papà)</p>
+                            <p class="text-muted">Email: luca@example.com</p>
+                            <p class="text-muted">Telegram: @luca</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Francesca -->
                 <div class="col-md-3 mb-3">
                     <div class="user-card p-3">
-                        <img src="https://via.placeholder.com/300" alt="Luca Bianchi">
+                        <img src="https://via.placeholder.com/300" alt="PIC">
                         <div class="mt-3">
-                            <h5>Luca Bianchi</h5>
-                            <p>Visualizzatore</p>
-                            <p class="text-muted">Email: luca@example.com</p>
-                            <p class="text-muted">Telegram: @luca</p>
+                            <h5>Francesca Banfi</h5>
+                            <p>Visualizzatore (mamma)</p>
+                            <p class="text-muted">Email: francesca@example.com</p>
+                            <p class="text-muted">Telegram: @francesca</p>
                         </div>
                     </div>
                 </div>

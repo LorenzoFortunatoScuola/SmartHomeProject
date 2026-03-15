@@ -73,7 +73,7 @@
         <div class="col-md-6">
             <div class="card user-card">
                 <div class="d-flex align-items-center">
-                    <img src="https://via.placeholder.com/80" class="profile-img me-3">
+                    <img src="https://via.placeholder.com/80" class="profile-img me-3" alt="PIC">
                     <div>
                         <h5 class="mb-1">Mario Rossi</h5>
                         <span class="badge badge-config">Configuratore</span>
@@ -90,7 +90,7 @@
         <div class="col-md-6">
             <div class="card user-card">
                 <div class="d-flex align-items-center">
-                    <img src="https://via.placeholder.com/80" class="profile-img me-3">
+                    <img src="https://via.placeholder.com/80" class="profile-img me-3" alt="PIC"> 
                     <div>
                         <h5 class="mb-1">Luca Bianchi</h5>
                         <span class="badge badge-view">Visualizzatore</span>
@@ -99,6 +99,23 @@
                 <div class="mt-3">
                     <p class="mb-1"><strong>Email:</strong> luca@example.com</p>
                     <p class="mb-0"><strong>Telegram:</strong> @luca</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FRANCESCA BANFI -->
+        <div class="col-md-6">
+            <div class="card user-card">
+                <div class="d-flex align-items-center">
+                    <img src="https://via.placeholder.com/80" class="profile-img me-3" alt="PIC">
+                    <div>
+                        <h5 class="mb-1">Franceca Banfi</h5>
+                        <span class="badge badge-view">Visualizzatore</span>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <p class="mb-1"><strong>Email:</strong> francesca@example.com</p>
+                    <p class="mb-0"><strong>Telegram:</strong> @francesca</p>
                 </div>
             </div>
         </div>

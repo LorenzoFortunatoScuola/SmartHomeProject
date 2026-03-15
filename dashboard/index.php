@@ -161,11 +161,6 @@
             <!-- NAVBAR -->
             <nav class="navbar navbar-light navbar-custom mb-4 p-3">
                 <span class="navbar-brand mb-0 h4">Dashboard Smart Home</span>
-                <div class="d-flex align-items-center ms-auto">
-                    <!-- Solo l'utente connesso -->
-                    <img src="https://via.placeholder.com/40" alt="PIC">
-                    <span class="ms-2">Mario Rossi (Configuratore)</span>
-                </div>
             </nav>
 
             <!-- ALERT INCENDIO -->
@@ -211,7 +206,7 @@
                         <img src="https://via.placeholder.com/300" alt="PIC">
                         <div class="mt-3">
                             <h5>Luca Bianchi</h5>
-                            <p>Visualizzatore (papà)</p>
+                            <p>Visualizzatore (1)</p>
                             <p class="text-muted">Email: luca@example.com</p>
                             <p class="text-muted">Telegram: @luca</p>
                         </div>
@@ -224,7 +219,7 @@
                         <img src="https://via.placeholder.com/300" alt="PIC">
                         <div class="mt-3">
                             <h5>Francesca Banfi</h5>
-                            <p>Visualizzatore (mamma)</p>
+                            <p>Visualizzatore (2)</p>
                             <p class="text-muted">Email: francesca@example.com</p>
                             <p class="text-muted">Telegram: @francesca</p>
                         </div>

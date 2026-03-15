@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -24,56 +23,10 @@
             justify-content: center;
             font-family: 'Segoe UI', sans-serif;
             background: radial-gradient(circle at 20% 20%, #4f46e5, #020617 60%);
-            overflow: hidden;
             color: white;
         }
 
-        /* sfondo glow animato */
-
-        body::before {
-            content: "";
-            position: absolute;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, #6366f1, #9333ea);
-            filter: blur(120px);
-            animation: move1 12s infinite alternate;
-        }
-
-        body::after {
-            content: "";
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, #ec4899, #8b5cf6);
-            filter: blur(120px);
-            right: -150px;
-            bottom: -150px;
-            animation: move2 14s infinite alternate;
-        }
-
-        @keyframes move1 {
-            from {
-                transform: translate(-100px, -50px);
-            }
-
-            to {
-                transform: translate(200px, 100px);
-            }
-        }
-
-        @keyframes move2 {
-            from {
-                transform: translate(0, 0);
-            }
-
-            to {
-                transform: translate(-200px, -100px);
-            }
-        }
-
         .login-card {
-            position: relative;
             width: 100%;
             max-width: 420px;
             padding: 40px;
@@ -81,12 +34,6 @@
             background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
-            transition: 0.4s;
-        }
-
-        .login-card:hover {
-            transform: translateY(-8px) scale(1.01);
         }
 
         .logo {
@@ -103,25 +50,16 @@
             border-radius: 14px;
             padding: 14px;
             color: white;
-            caret-color: white;
-            cursor: text;
         }
 
         .form-control::placeholder {
             color: #cbd5f5;
         }
 
-        .form-control:focus {
-            background: rgba(255, 255, 255, 0.12);
-            box-shadow: 0 0 0 2px #6366f1;
-            color: white;
-        }
-
         .input-group-text {
             background: rgba(255, 255, 255, 0.08);
             border: none;
             color: #cbd5f5;
-            border-radius: 14px 0 0 14px;
         }
 
         .btn-login {
@@ -131,34 +69,9 @@
             border-radius: 14px;
             font-weight: 600;
             background: linear-gradient(90deg, #6366f1, #ec4899);
-            transition: 0.3s;
             color: white;
-        }
-
-        .btn-login:hover {
-            transform: scale(1.04);
-            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.6);
-        }
-
-        .subtitle {
-            color: #cbd5f5;
-            font-size: 14px;
-        }
-
-        a {
-            color: #a5b4fc;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: white;
-        }
-
-        hr {
-            border-color: rgba(255, 255, 255, 0.2);
         }
     </style>
-
 </head>
 
 <body>
@@ -167,55 +80,66 @@
 
         <div class="text-center mb-4">
             <i class="bi bi-shield-lock logo"></i>
-
             <h3>Benvenuto</h3>
-
-            <p class="subtitle">Accedi al tuo account</p>
+            <p>Accedi al tuo account</p>
         </div>
 
-        <form>
+        <form id="loginForm">
 
             <div class="mb-3">
-                <label class="form-label">Email</label>
-
+                <label>Email</label>
                 <div class="input-group">
                     <span class="input-group-text">
                         <i class="bi bi-envelope"></i>
                     </span>
 
-                    <input type="email" class="form-control" placeholder="Inserisci email" required>
+                    <input type="email" id="email" class="form-control" placeholder="Inserisci email" required>
                 </div>
             </div>
 
             <div class="mb-3">
-                <label class="form-label">Password</label>
-
+                <label>Password</label>
                 <div class="input-group">
                     <span class="input-group-text">
                         <i class="bi bi-lock"></i>
                     </span>
 
-                    <input type="password" class="form-control" placeholder="Inserisci password" required>
+                    <input type="password" id="password" class="form-control" placeholder="Inserisci password" required>
                 </div>
             </div>
 
-            <a href="../dashboard/index.php" class="btn btn-login w-100">
+            <button type="submit" class="btn btn-login w-100">
                 Accedi
-            </a>
+            </button>
 
         </form>
 
         <hr>
 
         <div class="text-center">
-            <p class="subtitle mb-1">Non hai un account?</p>
-
-            <a href="registrazione.php" class="fw-bold">
-                Registrati
-            </a>
+            <p>Non hai un account?</p>
+            <a href="registrazione.php">Registrati</a>
         </div>
 
     </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function (e) {
+
+            e.preventDefault();
+
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            if (email === "" || password === "") {
+                alert("Compila tutti i campi!");
+                return;
+            }
+
+            window.location.href = "../dashboard/index.php";
+
+        });
+    </script>
 
 </body>
 
